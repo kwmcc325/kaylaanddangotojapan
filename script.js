@@ -11,6 +11,9 @@ const kyotoPopUp = document.getElementById('kyotoPopUp');
 const tokyoBtn = document.getElementById('tokyoBtn');
 const tokyoPopUp = document.getElementById('tokyoPopUp');
 
+const genBtn = document.getElementById('genBtn');
+const genPopUp = document.getElementById('genPopUp');
+
 const popupBtn = document.getElementById('popupBtn');
 const popup = document.getElementById('popup');
 //const closeBtn = document.getElementById('closeBtn');
@@ -19,53 +22,48 @@ var closeBtns = document.querySelectorAll(".close-btn");
 
 // Show osaka
 osakaBtn.onclick = function() {
-    // Show the popup
     osakaPopUp.style.display = 'flex';
 }
 
 // Show kamamura
 kamBtn.onclick = function() {
-    // Show the popup
     kamPopUp.style.display = 'flex';
 }
 
 // Show kyoto
 kyotoBtn.onclick = function() {
-    // Show the popup
     kyotoPopUp.style.display = 'flex';
 }
 
 // Show tokyo
 tokyoBtn.onclick = function() {
-    // Show the popup
     tokyoPopUp.style.display = 'flex';
 }
 
-// Show the popup when the button is clicked
+// Show gen
+genBtn.onclick = function() {
+    genPopUp.style.display = 'flex';
+}
+
 popupBtn.onclick = function() {
-    // Trigger confetti effect
     launchConfetti();
-    
-    // Show the popup
     popup.style.display = 'flex';
 }
 
 
-// Attach event listener to each close button
+// listener
 closeBtns.forEach(function(btn) {
     btn.onclick = function() {
-        // Close the respective modal when clicking on a close button
         popup.style.display = "none";
         osakaPopUp.style.display = "none";
         kamPopUp.style.display = "none";
         kyotoPopUp.style.display = "none";
         tokyoPopUp.style.display = "none";
-
-
+        genPopUp.style.display = "none";
     }
 });
 
-// Close the modal if the user clicks outside of it
+// close modal
 window.onclick = function(event) {
     if (event.target == popup) {
         popup.style.display = "none";
@@ -73,6 +71,7 @@ window.onclick = function(event) {
         osakaPopUp.style.display = "none";
     }
 }
+
 
 // Function to trigger confetti
 function launchConfetti() {
@@ -82,4 +81,6 @@ function launchConfetti() {
         origin: { y: 0.6 } // Set the starting position for the confetti
     });
 }
+
+
 
