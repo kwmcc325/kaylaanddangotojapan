@@ -11,16 +11,16 @@
 <body>
 
     <header>
-        <h1>My Travel Itinerary</h1>
-        <p>Excited for my trip to Japan! Here's my itinerary for the cities I'll be visiting.</p>
+        <h1>kayla and dan are going to japan!</h1>
+        <p>i'm an engineer but cannot center a div</p>
     </header>
 
     <div class="circle-container">
-        <a href="/tokyo.html" target="_blank"><img src="./media/tokyo.png" /></a>
-        <a href="/tokyo.html" target="_blank"><img src="./media/kyoto.png" /></a>
+        <a id="tokyoBtn"><img src="./media/tokyo.png" /></a>
+        <a id="kyotoBtn"><img src="./media/kyoto.png" /></a>
         <a id="kamBtn"><img src="./media/kamakura.png" /></a>
         <a id="osakaBtn"><img src="./media/osaka.png" /></a>
-        <a id="tokyoBtn"><img src="./media/general.png" /></a>
+        <a id="genBtn"><img src="./media/general.png" /></a>
         <a id="popupBtn"><img src="./media/click.png" /></a>
 
     </div>
@@ -58,8 +58,46 @@
             <li>drink matcha</li>
             <li>bask in the wes anderson x anime vibe</li>
         </div>
-    </div>    
+    </div>   
+    
+    <!-- Kyoto Modal -->
+    <div id="kyotoPopUp" class="popup">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <p>day off in kyoto</p>
+            <li><a href="https://genius.com/Phoebe-bridgers-kyoto-lyrics" target="_blank">kyoto by phoebe bridgers (lyrics due to dans auditory processing disorder)</a></li>
+            <li>get bored at temple</li>
+            <li>go to 7/11</li>
+            <li>take speed train</li>
+            <li>debate going to arcade, ultimately don't go</li>
+            <li>call alcoholic father from a payphone</li>
+        </div>
+    </div>  
 
+    <!-- Tokyo Modal -->
+    <div id="tokyoPopUp" class="popup">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <p>Tokyo</p>
+            <li><a href="https://sankan.kunaicho.go.jp/english/guide/koukyo.html" target="_blank">Imperial Palace</a></li>
+            <li><a href="https://www.senso-ji.jp/english/" target="_blank">Sensō-ji</a></li>
+            <li><a href="https://en.tokyotower.co.jp/" target="_blank">Tokyo Tower</a></li>
+            <li><a href="https://en.japantravel.com/tokyo/shirohiges-cream-puff-factory/40958" target="_blank">Totoro cream puff</a></li>
+            <li>cat cafe</li>
+            <li>prob fuck</li>
+        </div>
+    </div> 
+    
+    <!-- gen Modal -->
+    <div id="genPopUp" class="popup">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <p>gen</p>
+            <li><a href="https://www.gardenhotels.co.jp/jingugaientokyo-premier/eng/" target="_blank">hotel option (fanshy)</a></li>
+            <li>blah blah blah flights dates etc</li>
+
+        </div>
+    </div>     
     <script src="script.js"></script>
 
 

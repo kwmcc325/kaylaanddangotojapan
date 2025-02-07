@@ -5,6 +5,11 @@ const osakaPopUp = document.getElementById('osakaPopUp');
 const kamBtn = document.getElementById('kamBtn');
 const kamPopUp = document.getElementById('kamPopUp');
 
+const kyotoBtn = document.getElementById('kyotoBtn');
+const kyotoPopUp = document.getElementById('kyotoPopUp');
+
+const tokyoBtn = document.getElementById('tokyoBtn');
+const tokyoPopUp = document.getElementById('tokyoPopUp');
 
 const popupBtn = document.getElementById('popupBtn');
 const popup = document.getElementById('popup');
@@ -24,6 +29,18 @@ kamBtn.onclick = function() {
     kamPopUp.style.display = 'flex';
 }
 
+// Show kyoto
+kyotoBtn.onclick = function() {
+    // Show the popup
+    kyotoPopUp.style.display = 'flex';
+}
+
+// Show tokyo
+tokyoBtn.onclick = function() {
+    // Show the popup
+    tokyoPopUp.style.display = 'flex';
+}
+
 // Show the popup when the button is clicked
 popupBtn.onclick = function() {
     // Trigger confetti effect
@@ -41,6 +58,9 @@ closeBtns.forEach(function(btn) {
         popup.style.display = "none";
         osakaPopUp.style.display = "none";
         kamPopUp.style.display = "none";
+        kyotoPopUp.style.display = "none";
+        tokyoPopUp.style.display = "none";
+
 
     }
 });
