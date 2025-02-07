@@ -1,0 +1,122 @@
+/* styles.css */
+
+/* General Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    justify-content: center; /* Horizontally center the container */
+
+    background-color: #f4f4f9;
+    background-image: url('/Users/kayla/japan/background.jpg'); /* Background image */
+    background-repeat: no-repeat; /* Ensure the image does not repeat */
+    background-size: cover; /* Make the background image cover the entire screen */
+    background-position: center; /* Center the background image */
+    background-attachment: fixed; /* Keeps the background fixed during scroll */
+
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+.circle-container {
+    position: relative;
+    justify-content: center; /* Horizontally center the container */
+
+    width: 400px; /* Container width */
+    height: 400px; /* Keep the height the same */
+    margin: auto;
+}
+
+.circle-container a {
+    position: absolute;
+    width: 50px;  /* Adjust size of the links/images */
+    height: 50px; /* Adjust size of the links/images */
+    top: 50%;
+    left: 50%;
+    transform-origin: center center;
+    transition: transform 0.5s ease;
+}
+
+.circle-container a:nth-child(1) {
+    transform: rotate(0deg) translateX(250px) rotate(0deg); /* Increased translateX */
+}
+
+.circle-container a:nth-child(2) {
+    transform: rotate(72deg) translateX(250px) rotate(-72deg); /* Increased translateX */
+}
+
+.circle-container a:nth-child(3) {
+    transform: rotate(144deg) translateX(250px) rotate(-144deg); /* Increased translateX */
+}
+
+.circle-container a:nth-child(4) {
+    transform: rotate(216deg) translateX(250px) rotate(-216deg); /* Increased translateX */
+}
+
+.circle-container a:nth-child(5) {
+    transform: rotate(288deg) translateX(200px) rotate(-288deg); /* Adjust as needed */
+}
+
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Popup Modal Styling */
+/* Popup Modal Styling */
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Overlay background */
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 300px;
+    position: relative;
+}
+
+/* Close button styling (black X) */
+.close-btn {
+    font-size: 30px;
+    color: black;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: red; /* Optional: Add a hover effect */
+}
+
+/* Itinerary list styling */
+#itineraryList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#itineraryList li {
+    padding: 5px 0;
+    font-size: 18px;
+}

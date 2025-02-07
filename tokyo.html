@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Travel Itinerary</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+    <div class="tabs">
+        <button class="tab-button" onclick="showCity('tokyo')">Tokyo</button>
+        <button class="tab-button" onclick="showCity('kyoto')">Kyoto</button>
+        <button class="tab-button" onclick="showCity('kamakura')">Kamakura</button>
+        <button class="tab-button" onclick="showCity('osaka')">Osaka</button>
+    </div>
+
+    <div id="tokyo" class="city-content">
+        <h2>Tokyo Itinerary</h2>
+        <p><strong>Day 1:</strong> Arrival in Tokyo</p>
+        <p><strong>Day 2:</strong> Visit Senso-ji Temple and explore Shibuya Crossing</p>
+        <p><strong>Day 3:</strong> Day trip to Mt. Fuji</p>
+    </div>
+
+    <div id="kyoto" class="city-content" style="display: none;">
+        <h2>Kyoto Itinerary</h2>
+        <p><strong>Day 1:</strong> Visit Fushimi Inari Shrine</p>
+        <p><strong>Day 2:</strong> Explore Arashiyama Bamboo Grove and Kinkaku-ji</p>
+        <p><strong>Day 3:</strong> Tea ceremony experience and Gion District</p>
+    </div>
+
+    <script>
+        // Function to show content for a specific city and hide others
+        function showCity(city) {
+            const cities = document.querySelectorAll('.city-content');
+            cities.forEach(function(cityContent) {
+                cityContent.style.display = 'none';
+            });
+
+            const selectedCity = document.getElementById(city);
+            selectedCity.style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
