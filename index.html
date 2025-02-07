@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Travel Itinerary</title>
+    <title>japan</title>
     <link rel="stylesheet" href="styles.css">
     <!-- Include canvas-confetti CDN --> 
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
@@ -19,7 +19,7 @@
         <a href="/tokyo.html" target="_blank"><img src="./media/tokyo.png" /></a>
         <a href="/tokyo.html" target="_blank"><img src="./media/kyoto.png" /></a>
         <a href="/tokyo.html" target="_blank"><img src="./media/kamakura.png" /></a>
-        <a href="/tokyo.html" target="_blank"><img src="./media/osaka.png" /></a>
+        <a id="osakaBtn"><img src="./media/osaka.png" /></a>
         <a id="tokyoBtn"><img src="./media/general.png" /></a>
         <a id="popupBtn"><img src="./media/click.png" /></a>
 
@@ -29,8 +29,20 @@
     <!-- Popup Modal -->
     <div id="popup" class="popup">
         <div class="popup-content">
-            <span class="close-btn" id="closeBtn">&times;</span>
+            <span class="close-btn">&times;</span>
             <p>i'm so excited we're going to japan!!!!!!!!!</p>
+        </div>
+    </div>
+
+    <!-- Osaka Modal -->
+    <div id="osakaPopUp" class="popup">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <p>osaka area stuff</p>
+            <li><a href="https://www.visitnara.jp/destinations/area/nara-park/#" target="_blank">Nara Park (bowing dear)</a></li>
+            <li><a href="https://www.insidekyoto.com/arashiyama-bamboo-grove" target="_blank">Bamboo grove</a></li>
+            <li><a href="https://www.usj.co.jp/web/en/us/areas/super-nintendo-world" target="_blank">Nintendo World</a></li>
+            <li><a href="https://www.loutre-kyoto.com/english/" target="_blank">Otter cafe!!! (osaka loc)</a></li>
         </div>
     </div>
 
