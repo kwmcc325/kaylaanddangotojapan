@@ -6,7 +6,7 @@ body {
     justify-content: center; /* Horizontally center the container */
 
     background-color: #f4f4f9;
-    background-image: url('/Users/kayla/japan/background.jpg'); /* Background image */
+    background-image: url('./media/background.jpg'); /* Background image */
     background-repeat: no-repeat; /* Ensure the image does not repeat */
     background-size: cover; /* Make the background image cover the entire screen */
     background-position: center; /* Center the background image */
